@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">  
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>中国复工复产地图</title>
+  <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+  <link rel="stylesheet" href="css/index.css"></script>
+  <link rel="stylesheet" href="css/leftandBottom.css"></script>
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+    }
+
+    #map-styles .input-item {
+      height: 2rem;
+    }
+
+    #map-styles .input-item span{
+      display: inline-block;
+      width: 4rem;
+    }
+
+    #map-styles .input-item .input-text {
+      color: #0288d1;
+      margin-left: 1rem;
+      margin-right: 0rem;
+      width: 6rem;
+    }
+  </style>
+</head>
+
+<body style="overflow:hidden;color: white;">
+  <div id="rightPanel">
+    <div class='rightChartContainer' id="bar1"></div>
+    <div class='rightChartContainer' id="bar2"></div>
+  </div>
+  <div id='leftPanel'>
+    <table id='table_display' class="table"></table>
+  </div>
+  <div id="bottomPanel">
+    <div class='bar-content-bottom' id='bottomContent'></div>
+  </div>
+  <div id="container"></div>
+  <div id="header">
+    <div id='titleContainer'>
+      <span id='headerTitle'>中国复工复产地图</span>
+    </div>
+    <div id="textContainer">
+      <span id="text">数据来源：百度慧眼&nbsp中国知网</span>
+      <span id="text2">地图来源：高德地图</span>
+      <span id="text3" style="font-weight: bold;">截止至2020年3月16日</span>
+    </div>
+    <div id='toggleContainer'>
+      <div class='btn-group'>
+        <button type="button" class='btn btn-default' id='toChina'>复工</button>
+        <button type="button" class='btn btn-default' id='toGlobal'>缺工</button>
+      </div>
+    </div>
+  </div>
+  <script src='data/table_data.js'></script>
+  <script src='customed.js'></script>
+  <script src='data/sideCard.js'></script>
+  <script src='data/fugong_daily.js'></script>
+  <script src='data/bottomCardData.js'></script>
+  <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+  <script src="https://webapi.amap.com/maps?v=1.4.15&key=65fc01889b498c3df112ed200dc2bfe4"></script>
+  <script src='rightbar.js'></script>
+  <script src='leftchart.js'></script>
+  <script src="btm_chart.js"></script>
+  <script src='gaode.js'></script>
+</body>
+
+</html>

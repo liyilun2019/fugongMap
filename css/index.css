@@ -1,0 +1,302 @@
+#header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(1, 6, 17, 0.6);
+  height: 9%;
+}
+#autoplay,
+#suspend {
+  position: absolute;
+  display: flex;
+  top: 12px;
+  right: 12px;
+  color: white;
+  /* font-size: 0.14px; */
+  cursor: pointer;
+  z-index: 99;
+}
+/* #autoplay .playicon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/æ’­æ”¾.png);
+  margin-right: 4px;
+  background-size: 20px;
+}
+#autoplay .playicon:hover {
+  background-image: url(../img/æ’­æ”¾1.png);
+} */
+#suspend {
+  display: none;
+}
+/* #suspend .suspendicon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/æš‚åœ.png);
+  margin-right: 4px;
+  background-size: 20px;
+} */
+/* #suspend .suspendicon:hover {
+  background-image: url(../img/æš‚åœ1.png);
+} */
+#titleContainer {
+  float: left;
+  margin: 1% auto auto auto;
+  border-right: 1px solid #fff;
+  padding-right: 1%;
+}
+#imgContainer {
+  float: left;
+  margin: 1%;
+}
+#headerTitle {
+  letter-spacing: 3.5px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 46px;
+  display: block;
+}
+#headerTitle-en {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 46px;
+  color: #999;
+}
+#timeContainer {
+  float: left;
+  text-align: center;
+  margin-left: 1%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#date {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #fff;
+}
+#clock {
+  display: block;
+  letter-spacing: 3.5px;
+  color: #fff;
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+}
+#textContainer {
+  float: right;
+  position: relative;
+  top: 17%;
+  right: 1%;
+  color: white;
+  font-size: 0.14rem;
+  text-align: right;
+}
+#text,
+#text2 {
+  display: block;
+}
+#homeBtnContainer {
+  position: fixed;
+  top: 11%;
+  left: 21%;
+}
+#legendContainer {
+  position: fixed;
+  bottom: 31%;
+  right: 21%;
+}
+.mapTitle {
+  color: white;
+  position: fixed;
+  top: 11%;
+  z-index: 3;
+  left: 40%;
+  font-size: 0.14rem;
+  padding: 0.5%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+#leftPanel {
+  position: fixed;
+  width: 20%;
+  height: 91%;
+  left: 0;
+  top: 9%;
+  z-index: 2;
+  background-color: rgba(1, 6, 17, 0.6);
+}
+#rightPanel {
+  position: fixed;
+  width: 20%;
+  height: 91%;
+  right: 0;
+  top: 9%;
+  z-index: 2;
+  background-color: rgba(1, 6, 17, 0.6);
+}
+.rightChartContainer {
+  width: 100%;
+  height: 50%;
+}
+
+#numPanel {
+  width: 100%;
+  height: 8%;
+}
+#quezhenContainer,
+#yisiContainer,
+#siwangContainer {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+#quezhenNum,
+#yisiNum,
+#siwangNum {
+  display: block;
+  font-size: 0.36rem;
+  font-weight: 500;
+}
+#quezhenNum {
+  color: #f56262;
+}
+#yisiNum {
+  color: #e8b77d;
+}
+#siwangNum {
+  color: rgb(127, 127, 127);
+}
+#quezhenText,
+#yisiText,
+#siwangText {
+  font-size: 13px;
+  color: #fff;
+}
+/* ä¸‹ä¾§é¢æ¿ */
+#bottomPanel {
+  position: fixed;
+  width: 60%;
+  height: 29%;
+  bottom: 0;
+  left: 20%;
+  z-index: 2;
+  background-color: rgba(1, 6, 17, 0.6);
+}
+/* å›¾ä¾‹ */
+.esri-widget__heading {
+  display: none;
+  /* margin: 0 0 0.2rem 0; */
+}
+.esri-legend__layer-caption {
+  display: none;
+}
+/* popup */
+.esri-popup--is-docked-top-right .esri-popup__main-container {
+  position: fixed;
+  top: 9%;
+  right: 20%;
+}
+
+.esri-view-width-xlarge .esri-popup__main-container {
+  width: 240px;
+}
+.esri-widget__table tr th {
+  width: 70%;
+}
+.esri-widget__table tr td {
+  width: 30%;
+}
+.esri-popup__inline-actions-container > .esri-popup__action,
+.esri-popup__inline-actions-container > .esri-popup__action-toggle {
+  max-width: 46% !important;
+}
+#layerControl {
+  position: fixed;
+  top: 16%;
+  left: 21%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #333;
+  text-align: center;
+  /* display: none; */
+}
+#layerControl img {
+  vertical-align: -webkit-baseline-middle;
+}
+#layerMsg {
+  position: fixed;
+  top: 21%;
+  left: 21%;
+  width: 150px;
+  height: 90px;
+  background-color: rgba(58, 93, 119, 0.7);
+  /* display: none; */
+}
+#layerMsg > div {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 0.14rem;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+}
+#layerMsg > div:hover {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  font-size: 0.14rem;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(86, 100, 124, 1);
+}
+
+#toggleContainer {
+  position: fixed;
+  top: 1.8%;
+  right: 19%;
+  padding: 0.4% 2%;
+  border-right: 1px solid white;
+}
+#toChina,
+#toGlobal {
+  background: rgba(32, 66, 82, 1);
+  color: white;
+  border: none;
+  width: 90px;
+}
+#toChina {
+  border-radius: 24px 0 0 24px;
+  background: rgba(43, 91, 104, 1);
+}
+#toGlobal {
+  border-radius: 0 24px 24px 0;
+}
+#toGlobal:hover {
+  background: rgba(32, 66, 82, 0.3);
+}
+
+#table_display{
+  font-size: 16px;
+  background: rgba(1, 6, 17, 0.6);
+}
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+  color: inherit;
+}
+table.dataTable tbody tr {
+  background-color: inherit;
+}
+input{
+  background: inherit;
+  border-block-end-color: unset;
+  border-block-start-color: unset;
+  border-top-color: unset;
+  border-bottom-color: gray;
+}
